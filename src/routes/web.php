@@ -25,3 +25,5 @@ Route::get('/test/{room}/{id}',function ($room,$id){return 'roomが' . $room . '
 Route::get('/test/{greeting?}', function($greeting = 'Goodmorning') {
     return $greeting . '=おはようございます';
 });
+
+Route::get('/', [TestController::class, 'index']);
